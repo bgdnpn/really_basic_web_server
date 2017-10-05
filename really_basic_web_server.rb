@@ -1,6 +1,8 @@
+#!/usr/bin/env ruby
+
 require 'socket'
 
-WEBROOT = "/var/www/static"
+WEBROOT = "."
 HEADER = "HTTP/1.1 %s\r\nContent-Type: %s\r\nContent-Length: %s\r\n\r\n"
 CONTENT_TYPE_MAPPING = {
   'html' => 'text/html',
